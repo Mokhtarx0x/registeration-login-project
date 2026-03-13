@@ -6,7 +6,9 @@ PHP & MySQL Project
 A simple web application built with PHP and MySQL featuring user registration, login, and a protected dashboard.
 
 Pages
-PageFileDescriptionRegisterregister.phpCreate a new accountLoginlogin.phpSign in to your accountDashboarddashboard.phpProtected page showing user info
+Page File Description Registerregister.php  : Create a new 
+account Login : login.php 
+Sign in to your account Dashboard : dashboard.php Protected page showing user info
 
 Project Structure
 registeration-login-project/
@@ -50,7 +52,17 @@ Destroys the session and redirects back to the Login page
 
 Database Table
 Table name: users
-ColumnTypeDescriptionidINT, AUTO_INCREMENTPrimary keyusernameVARCHAR(50)Unique usernameemailVARCHAR(100)Unique email addresspasswordVARCHAR(255)Bcrypt-hashed passwordfirst_nameVARCHAR(50)User's first namesecond_nameVARCHAR(50)User's second namecreated_atTIMESTAMPAccount creation date
+
+| Column | Type | Description |
+|---|---|---|
+| `id` | INT, AUTO_INCREMENT | Primary key |
+| `username` | VARCHAR(50) | Unique username |
+| `email` | VARCHAR(100) | Unique email address |
+| `password` | VARCHAR(255) | Bcrypt-hashed password |
+| `first_name` | VARCHAR(50) | User's first name |
+| `second_name` | VARCHAR(50) | User's second name |
+| `created_at` | TIMESTAMP | Account creation date |
+
 
 Configuration
 If you changed the MySQL password in XAMPP, update config.php:
